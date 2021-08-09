@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:SyncKitCoreDataExample/SyncKitCoreDataExampleTests/Encrypted/EntityWithEncryptedFields+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:SyncKitCoreDataExample/SyncKitCoreDataExampleTests/Encrypted/EntityWithEncryptedFields+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
       location = "group:SyncKitCoreDataiOS/SyncKitCoreDataiOS.xcodeproj">
    </FileRef>
    <FileRef
