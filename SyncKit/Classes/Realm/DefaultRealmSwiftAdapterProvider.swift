@@ -77,11 +77,11 @@ import Realm
     }
     
     fileprivate static func applicationDocumentsDirectory() -> String? {
-        #if TARGET_OS_IPHONE
-        return NSSearchPathForDirectoriesInDomains(.libraryDirectory, .userDomainMask, true).last
-        #else
+        #if os(macOS)
         let urls = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)
         return urls.last?.appendingPathComponent("com.mentrena.QSCloudKitSynchronizer").path
+        #else
+        return NSSearchPathForDirectoriesInDomains(.libraryDirectory, .userDomainMask, true).last
         #endif
     }
     
